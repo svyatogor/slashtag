@@ -1,0 +1,9 @@
+<% for message in @messages do %>
+<p>
+	<h1><%= message.subject %></h1><br>
+	<p>
+		<%= message.body %>
+	</p>
+</p>
+<hr />
+<% end %>

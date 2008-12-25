@@ -1,0 +1,11 @@
+<h1><%= @message.subject %></h1>
+
+<p>
+	<%= textilize @message.body %>
+</p>
+
+<p>
+	Tags: <%= @message.tag_list %>
+</p>
+
+<%= link_to "Reply", new_message_message_path(@message) %>
